@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyPulse | Live Weather Forecast</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-app">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="cityInput" placeholder="Enter city name (e.g., Karachi, London)...">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="error-msg" id="errorMsg">
+            <i class="fa-solid fa-circle-exclamation"></i> City not found! Please try again.
+        </div>
+
+        <div class="weather-info" id="weatherInfo">
+            <div class="location">
+                <h2 id="cityName">Karachi</h2>
+                <p id="countryName">Pakistan</p>
+            </div>
+
+            <div class="weather-icon-box">
+                <i class="fa-solid fa-sun" id="weatherIcon"></i>
+            </div>
+
+            <div class="temperature">
+                <h1 id="temp">32°C</h1>
+                <p id="weatherDesc">Clear Sky</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-card">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <span id="windSpeed">12 km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fa-solid fa-compass"></i>
+                    <div>
+                        <span id="windDir">SSW</span>
+                        <p>Wind Direction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

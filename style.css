@@ -1,0 +1,133 @@
+\* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.weather-app {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+\* Search Box \*/ .search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 0.6rem 1rem;
+  gap: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.search-box i {
+  color: #38bdf8;
+  font-size: 1.1rem;
+}
+.search-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.search-box input::placeholder {
+  color: #94a3b8;
+}
+.search-box button {
+  background: #38bdf8;
+  border: none;
+  outline: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  color: #0f172a;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    background-color 0.3s;
+}
+.search-box button:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+\* Error Message \*/ .error-msg {
+  display: none;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-top: 1.2rem;
+  font-size: 0.85rem;
+}
+\* Weather Info \*/ .location {
+  margin-top: 2rem;
+}
+.location h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.location p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+.weather-icon-box {
+  margin: 1.5rem 0;
+  font-size: 4.5rem;
+  color: #fbbf24;
+}
+.temperature h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.temperature p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin-top: 0.2rem;
+}
+\* Details Section \*/ .weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.detail-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: left;
+}
+.detail-card i {
+  font-size: 1.5rem;
+  color: #38bdf8;
+}
+.detail-card span {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.detail-card p {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
